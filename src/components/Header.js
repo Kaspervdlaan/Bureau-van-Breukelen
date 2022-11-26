@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-function Header({ projectOne, projectTwo, projectThree, projectFour, projectFive, logo }) {
 
-    // const navigate = useNavigate();
+function Header({ projectOne, projectTwo, projectThree, projectFour, projectFive, logo }) {
 
     return (
         <>
@@ -12,7 +11,7 @@ function Header({ projectOne, projectTwo, projectThree, projectFour, projectFive
                 {/*  LOGO ELEMENT  */}
 
                 <picture className="w-36">
-                    <a href="/"> <img src={logo} alt=""/></a>
+                    <Link to="/"><img src={logo} alt=""/></Link>
                 </picture>
 
                 {/*  NAVIGATION ELEMENT  */}
@@ -33,8 +32,10 @@ function Header({ projectOne, projectTwo, projectThree, projectFour, projectFive
                         {projectOne && <a href="#projectOne" className="hover:underline">{projectOne}</a>}
                         {projectTwo && <a href="#projectTwo" className="hover:underline">{projectTwo}</a>}
                         {projectThree && <a href="#projectThree" className="hover:underline">{projectThree}</a>}
-                        {projectFour && <a href="#projectFour" className="hover:underline">{projectFour}</a>}
-                        {projectFive && <a href="#projectFive" className="hover:underline">{projectFive}</a>}
+
+
+                        {/*{projectFour && <a href="#projectFour" className="hover:underline">{projectFour}</a>}*/}
+                        {/*{projectFive && <a href="#projectFive" className="hover:underline">{projectFive}</a>}*/}
                     </div>
 
                 </nav>

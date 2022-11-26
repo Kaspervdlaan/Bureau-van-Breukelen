@@ -9,6 +9,7 @@ import Projects from "./pages/Projects";
 function App() {
     return (
         <div>
+
             <Header
                 projectOne="Doppergang"
                 projectTwo="Fietsenmaker"
@@ -24,7 +25,6 @@ function App() {
                     <Projects/>
                 }/>
 
-
                 <Route path="/about" exact element={
                     <About
                         title="Bureau van Breukelen"
@@ -32,7 +32,6 @@ function App() {
                         descTwo="Ut tincidunt tincidunt erat. Etiam feugiat lorem non metus. Vestibulum dapibus nunc ac augue."
                     />
                 }/>
-
 
             </Routes>
 

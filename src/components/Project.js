@@ -1,9 +1,10 @@
 import React from 'react';
 import Card from "./Card";
 
+
 function Project({ title, descOne, descTwo, url, name, image } ) {
     return (
-        <main id={name} className="h-screen bg-project-two-bg bg-cover bg-no-repeat">
+        <main id={name} className={image}>
             <Card
                 title={title}
                 descOne={descOne}
