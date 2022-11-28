@@ -5,7 +5,6 @@ import About from "./pages/About";
 import {Route, Routes} from "react-router-dom";
 import Projects from "./pages/Projects";
 
-
 function App() {
     return (
         <div>
@@ -13,7 +12,7 @@ function App() {
             <Header
                 projectOne="Doppergang"
                 projectTwo="Fietsenmaker"
-                projectThree="Nakwatch"
+                projectThree="Puta"
                 projectFour="Higo"
                 projectFive="de Puta"
                 logo={logo}

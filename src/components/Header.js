@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-
 function Header({ projectOne, projectTwo, projectThree, projectFour, projectFive, logo }) {
 
     return (
@@ -29,9 +28,9 @@ function Header({ projectOne, projectTwo, projectThree, projectFour, projectFive
 
                         {/*  PROJECT NAVIGATION LINKS  */}
 
-                        {projectOne && <a href="#projectOne" className="hover:underline">{projectOne}</a>}
-                        {projectTwo && <a href="#projectTwo" className="hover:underline">{projectTwo}</a>}
-                        {projectThree && <a href="#projectThree" className="hover:underline">{projectThree}</a>}
+                        {projectOne && <Link to="/#projectOne" className="hover:underline">{projectOne}</Link>}
+                        {projectTwo && <Link to="/#projectTwo" className="hover:underline">{projectTwo}</Link>}
+                        {projectThree && <Link to="/#projectThree" className="hover:underline">{projectThree}</Link>}
 
 
                         {/*{projectFour && <a href="#projectFour" className="hover:underline">{projectFour}</a>}*/}
