@@ -11,6 +11,8 @@ html {
 
 /*  NAVIGATION CSS  */
 
+/* Desktop menu logic*/
+
 #project-nav {
     display: none;
 }
@@ -21,4 +23,30 @@ html {
 
 #project-link:hover + #project-nav {
     display: flex;
+}
+
+/* Mobile menu logic */
+
+.showMobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    opacity: 100%;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    animation: ease-in-out;
+    transition-duration: 0.3s;
+
+}
+
+.hideMobileMenu {
+    transform: translateY(-100vh);
 }

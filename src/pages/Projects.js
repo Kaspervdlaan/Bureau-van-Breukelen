@@ -31,19 +31,19 @@ function Projects() {
 
             <Project
                 name="projectTwo"
-                title="ANdere titel"
+                title="Andere titel"
                 image="h-screen bg-cover bg-no-repeat bg-[url('./assets/backgrounds/project-one-bg.jpg')]"
-                descOne="higo de puta de put"
-                descTwo="haidflkas kldfhdk l dfs kls fhkljls ekj ilkdj fidf"
+                descOne="Hiha ho Joshua's website maken zo."
+                descTwo="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "
                 url="eventueleurl.com"
             />
 
             <Project
                 name="projectThree"
-                title="nog meer titels"
+                title="Gekke zijspan PhatFour"
                 image="h-screen bg-cover bg-no-repeat bg-[url('./assets/backgrounds/bg2.jpeg')]"
-                descOne="higo de puta de put"
-                descTwo="haidflkas kldfhdk l dfs kls fhkljls ekj ilkdj fidf"
+                descOne="Filmpje maken in de zon EN de sneeuw"
+                descTwo="Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
                 url="eventueleurl.com"
             />
         </>
