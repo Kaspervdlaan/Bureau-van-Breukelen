@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 function About({title, descOne, descTwo}) {
     return (
         <>
-            <div className="h-screen flex flex-col bg-[url('./assets/backgrounds/bg2.jpeg')] bg-cover bg-no-repeat">
+            <div className="h-[95vh] flex flex-col bg-white bg-cover bg-no-repeat">
                 <Card
                     title={title}
                     descOne={descOne}

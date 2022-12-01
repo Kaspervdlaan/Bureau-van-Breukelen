@@ -2,6 +2,9 @@ import React, {useEffect} from 'react';
 import Project from "../components/Project";
 import {useLocation} from "react-router-dom";
 import Footer from "../components/Footer";
+import bg1 from "../assets/backgrounds/bg1.jpg"
+import bg2 from "../assets/backgrounds/bg2.jpeg"
+import bg4 from "../assets/backgrounds/bg4.jpg"
 
 
 function Projects() {
@@ -23,19 +26,19 @@ function Projects() {
             <Project
                 name="projectOne"
                 title="Dopper x BureauvanBreukelen - 2022"
-                image="h-screen bg-cover bg-no-repeat bg-[url('./assets/backgrounds/bg1.jpg')]" // PUT BACKGROUND IMAGE URL HERE
+                image={bg1}
             />
 
             <Project
                 name="projectTwo"
                 title="Phatfour x BureauvanBreukelen - 2021"
-                image="h-screen bg-cover bg-no-repeat bg-[url('./assets/backgrounds/project-one-bg.jpg')]"
+                image={bg4}
             />
 
             <Project
                 name="projectThree"
                 title="Kartent x BureauvanBreukelen - 2020"
-                image="h-screen bg-cover bg-no-repeat bg-[url('./assets/backgrounds/bg2.jpeg')]"
+                image={bg2}
             />
 
             <Footer/>
