@@ -4,16 +4,6 @@ import { Link } from "react-router-dom";
 function Header({ projectOne, projectTwo, projectThree, projectFour, projectFive, logo }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    // function toggleMenu() {
-    //     const menu = document.getElementById('mobile-menu')
-    //     if (menu.className === "show") {
-    //         menu.className = "hide";
-    //     } else {
-    //         menu.className = "show";
-    //     }
-    // }
-
-
     return (
         <>
             <header className="z-10 top-0 left-0 w-screen fixed flex justify-between items-center p-4 ">

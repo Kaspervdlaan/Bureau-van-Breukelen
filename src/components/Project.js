@@ -1,15 +1,11 @@
 import React from 'react';
-import Card from "./Card";
+import Banner from "./Banner";
 
-
-function Project({ title, descOne, descTwo, url, name, image } ) {
+function Project({ title, name, image } ) {
     return (
         <main id={name} className={image}>
-            <Card
+            <Banner
                 title={title}
-                descOne={descOne}
-                descTwo={descTwo}
-                url={url}
             />
         </main>
     );
