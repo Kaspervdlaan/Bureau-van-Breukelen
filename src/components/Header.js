@@ -10,7 +10,7 @@ function Header({ projectOne, projectTwo, projectThree, projectFour, projectFive
 
                 {/*  LOGO ELEMENT  */}
 
-                <picture className="w-24 z-20 md:w-36 2xl:w-44 ">
+                <picture className="w-24 z-20 md:w-36 2xl:w-36 ">
                     <Link to="/"><img src={logo} alt=""/></Link>
                 </picture>
 
@@ -25,7 +25,7 @@ function Header({ projectOne, projectTwo, projectThree, projectFour, projectFive
 
                     {/*  PROJECT NAVIGATION ELEMENT  */}
 
-                    <div id="project-nav" className="flex flex-col text-xl w-auto absolute top-24 right-16 gap-1 text-right 2xl:text-2xl 2xl:top-28">
+                    <div id="project-nav" className="flex flex-col text-xl w-auto absolute top-24 right-16 gap-1 text-right 2xl:text-2xl 2xl:top-24">
 
                         {/*  PROJECT NAVIGATION LINKS  */}
 
