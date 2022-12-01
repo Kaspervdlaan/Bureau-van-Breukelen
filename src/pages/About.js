@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from "../components/Card";
+import Footer from "../components/Footer";
 
 function About({title, descOne, descTwo}) {
     return (
@@ -11,12 +12,7 @@ function About({title, descOne, descTwo}) {
                     descTwo={descTwo}
                 />
             </div>
-            {/*<div className="m-auto max-w-4xl text-center ">*/}
-            {/*    <h2 className="text-3xl mb-2">{title}</h2>*/}
-            {/*    <p className="text-xl mb-2">{descOne}</p>*/}
-            {/*    <p className="text-xl">{descTwo}</p>*/}
-            {/*</div>*/}
-
+            <Footer/>
         </>
     );
 }
