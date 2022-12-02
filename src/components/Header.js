@@ -17,7 +17,7 @@ function Header({ projectOne, projectTwo, projectThree, projectFour, projectFive
                 {/*  LOGO ELEMENT  */}
 
                 <picture className="w-24 z-20 md:w-36 2xl:w-36 ">
-                    <Link to="/"><img src={logo} alt=""/></Link>
+                    <Link to="/"><img onClick={() => setIsMenuOpen((prev) => !prev)} src={logo} alt=""/></Link>
                 </picture>
 
                 {/*  NAVIGATION ELEMENT  */}
