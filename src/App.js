@@ -10,9 +10,9 @@ function App() {
         <div>
 
             <Header
-                projectOne="Doppergang"
-                projectTwo="Fietsenmaker"
-                projectThree="Puta"
+                projectOne="Dopper Watertap"
+                projectTwo="PhatFour"
+                projectThree="Kartent"
                 projectFour="Higo"
                 projectFive="de Puta"
                 logo={logo}

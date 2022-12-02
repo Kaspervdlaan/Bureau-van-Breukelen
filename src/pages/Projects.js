@@ -3,7 +3,7 @@ import Project from "../components/Project";
 import {useLocation} from "react-router-dom";
 import Footer from "../components/Footer";
 import bg1 from "../assets/backgrounds/bg1.jpg"
-import bg2 from "../assets/backgrounds/bg2.jpeg"
+import bg2 from "../assets/backgrounds/bg2.jpg"
 import bg4 from "../assets/backgrounds/bg4.jpg"
 
 
@@ -32,16 +32,15 @@ function Projects() {
             <Project
                 name="projectTwo"
                 title="Phatfour x BureauvanBreukelen - 2021"
-                image={bg4}
+                image={bg2}
             />
 
             <Project
                 name="projectThree"
                 title="Kartent x BureauvanBreukelen - 2020"
-                image={bg2}
+                image={bg4}
+                footer={true}
             />
-
-            <Footer/>
         </>
     );
 }

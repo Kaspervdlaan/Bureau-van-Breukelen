@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 
 function Header({ projectOne, projectTwo, projectThree, projectFour, projectFive, logo }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isProject, setIsProject] = useState(false);
+
+    const hideMenu = () => {
+        setIsMenuOpen(false)
+        setIsProject(false)
+    }
 
     return (
         <>
@@ -28,7 +34,6 @@ function Header({ projectOne, projectTwo, projectThree, projectFour, projectFive
                     <div id="project-nav" className="flex flex-col text-xl w-auto absolute top-24 right-16 gap-1 text-right 2xl:text-2xl 2xl:top-24">
 
                         {/*  PROJECT NAVIGATION LINKS  */}
-
                         {projectOne && <Link to="/#projectOne" className="hover:underline">{projectOne}</Link>}
                         {projectTwo && <Link to="/#projectTwo" className="hover:underline">{projectTwo}</Link>}
                         {projectThree && <Link to="/#projectThree" className="hover:underline">{projectThree}</Link>}
@@ -50,30 +55,55 @@ function Header({ projectOne, projectTwo, projectThree, projectFour, projectFive
 
 
 
-                <div className={isMenuOpen ? "showMobileMenu " : "hideMobileMenu"} >
+                    <div className={isMenuOpen ? "showMobileMenu " : "hideMobileMenu"} >
 
-                    <Link onClick={() => setIsMenuOpen((prev) => !prev)} to="/about" className="hover:underline ">About</Link>
-                    <Link onClick={() => setIsMenuOpen((prev) => !prev)} to="/" id="project-link" className="hover:underline">Projects</Link>
-
-                    <svg onClick={() => setIsMenuOpen(false)}
-                        className="h-8 w-8 text-gray-600 top-9 right-10 absolute cursor-pointer"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    >
-                        <line x1="18" y1="6" x2="6" y2="18" />
-                        <line x1="6" y1="6" x2="18" y2="18" />
-                    </svg>
+                        <div className="flex flex-col text-center gap-y-4">
+                        <Link onClick={() => setIsMenuOpen((prev) => !prev)} to="/about" className="hover:underline ">About</Link>
+                        <Link onClick={() => setIsProject((prev) => !prev)} to="/" id="project-link" className="hover:underline">Projects</Link>
 
 
-                    {/*<Link to="/#projectOne" className="hover:underline">{projectOne}</Link>*/}
-                    {/*<Link to="/#projectTwo" className="hover:underline">{projectTwo}</Link>*/}
-                    {/*<Link to="/#projectThree" className="hover:underline">{projectThree}</Link>*/}
-                </div>
-            </nav>
+                        <svg onClick={() => setIsMenuOpen((prev) => !prev)}
+                             className="h-8 w-8 text-gray-600 top-9 right-10 absolute cursor-pointer"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             strokeWidth="2"
+                             strokeLinecap="round"
+                             strokeLinejoin="round"
+                        >
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+
+                        {/*<Link to="/#projectOne" className="hover:underline">{projectOne}</Link>*/}
+                        {/*<Link to="/#projectTwo" className="hover:underline">{projectTwo}</Link>*/}
+                        {/*<Link to="/#projectThree" className="hover:underline">{projectThree}</Link>*/}
+                    </div>
+                    </div>
+
+                    <div className={isProject ? "showProjectMenu " : "hideProjectMenu"} >
+
+                    <div className="flex flex-col text-center gap-6">
+
+                        {projectOne && <Link onClick={hideMenu} to="/#projectOne" className="hover:underline">{projectOne}</Link>}
+                        {projectTwo && <Link onClick={hideMenu} to="/#projectTwo" className="hover:underline">{projectTwo}</Link>}
+                        {projectThree && <Link onClick={hideMenu} to="/#projectThree" className="hover:underline">{projectThree}</Link>}
+
+                        <svg onClick={() => setIsProject(false)}
+                             className="h-8 w-8 text-gray-600 top-9 right-10 absolute cursor-pointer"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             strokeWidth="2"
+                             strokeLinecap="round"
+                             strokeLinejoin="round"
+                        >
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </div>
+                    </div>
+                </nav>
             </header>
 
 
